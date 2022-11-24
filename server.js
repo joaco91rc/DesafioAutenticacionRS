@@ -65,7 +65,7 @@ io.on('connection', async socket => {
 });
 
 const server = httpserver.listen(PORT, async () => {
-    await mongoose.connect('mongodb+srv://estebanzarate:nERlfPKfZtCRTu0K@cluster0.hggfd.mongodb.net/?retryWrites=true&w=majority');
+    await mongoose.connect('mongodb+srv://user:user@clustercoderbackend.yov16h5.mongodb.net/?retryWrites=true&w=majority');
     console.log(`Server running on port ${PORT}`);
 });
 server.on('error', err => console.log(`Error: ${err}`));
